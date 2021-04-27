@@ -4,29 +4,33 @@
 
 
 
+
+
+
+
 # # Chapter 1
 
 # 1. Which of the following are operators, and which are values?
-     *           operator
-     'hello'     Value
-     -88.8       Value
-     -           operator
-     /           operator
-     +           operator
-     5           Value
+*           operator
+'hello'     value
+-88.8       value
+-           operator
+/           operator
++           operator
+5           value
 
 # 2. Which of the following is a variable, and which is a string?
-     spam        variable
-     'spam'      string
+spam        variable
+'spam'      string
 
 # 3. Name three data types.
-     interger, floating-point, string
+integer, floating-point, string
 
 # 4. What is an expression made up of? What do all expressions do?
-     an expression consists of values and operators, they can be evaluated down to, or reduced to, a single value
+an expression consists of values and operators, they can be evaluated down to, or reduced to, a single value
 
 # 5. This chapter introduced assignment statements, like spam = 10. What is the difference between an expression and a statement?
-     expressions use operators ( + - * / ), while assignment statements use an = to name a variable and assign its value
+expressions use operators ( + - * / ), while assignment statements use an = to name a variable and assign its value
 
 # 6. What does the variable bacon contain after the following code runs?
 # bacon = 20
@@ -49,11 +53,15 @@ str()
 
 # 10. Why does this expression cause an error? How can you fix it?
 # 'I have eaten ' + 99 + ' burritos.'
-This causes an error because you cant concatenate integers with strings
+This causes an error because integers cant be concatenated with strings
 correction :  "I have eaten " + str(99) + "burritos."
 
 # Extra credit: Search online for the Python documentation for the len() function. It will be on a web page titled “Built-in Functions.” Skim the list of other functions Python has, look up what the round() function does, and experiment with it in the interactive shell.
 #######################################################################################
+
+
+
+
 
 
 
@@ -103,39 +111,111 @@ not ((5 > 4) or (3 == 5))                 False
 =  assignment operator basically says "is".  its used to set the value of a variable
 
 # 7. Explain what a condition is and where you would use one.
-
+condition statements decide whether or not to run the code. 
+if it is raining, run the code that instructss robot butler to fetch the umbrella
 
 # 8. Identify the three blocks in this code:
-
-# spam = 0
-# if spam == 10:
-#     print('eggs')
-#     if spam > 5:
-#         print('bacon')
-#     else:
-#         print('ham')
-#     print('spam')
-# print('spam')
+spam = 0
+if spam == 10:
+    print('eggs')                           b
+    if spam > 5:                            l
+        print('bacon')      block2          o
+    else:                                   c
+        print('ham')        block3          k
+    print('spam')                           1    
+print('spam')
 
 # 9. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints Greetings! if anything else is stored in spam.
+if spam == 1:
+    print("Hello")
+elif spam == 2:
+    print("Howdy")
+else:
+    print("Greetings!")
 
 # 10. What keys can you press if your program is stuck in an infinite loop?
+CTRL-C
 
 # 11. What is the difference between break and continue?
+break exits the loop, while continue jumps back to the start of the loop
 
 # 12. What is the difference between range(10), range(0, 10), and range(0, 10, 1) in a for loop?
+range(10)      would be to iterate through the for loop 10 times
+range(0,10)     would be to iterate through the for loop for numbers 0,1,2,3,4,5,6,7,8,9   stopping just before 10
+range(0,10,1)    would iterate through the for loop for numbers 0-9, by an increment of 1
 
 # 13. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.
+for i in range (1,11):
+    print(i)
+
+number = 0
+while number < 10 :
+    number = number + 1
+    print(number)
 
 # 14. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
+import spam
+
+spam.bacon()
 
 # Extra credit: Look up the round() and abs() functions on the internet, and find out what they do. Experiment with them in the interactive shell.
+###################################################################################################################
+
+
+
+
 
 
 
 
 
 # Chapter 3
+
+
+# 1. Why are functions advantageous to have in your programs?
+to reduce repetition, and make your programs shorter and easier to read
+
+# 2. When does the code in a function execute: when the function is defined or when the function is called?
+when the function is called
+
+# 3. What statement creates a function?
+def
+
+# 4. What is the difference between a function and a function call?
+a function on its own just exists and does nothing until called
+calling a function runs it
+
+# 5. How many global scopes are there in a Python program? How many local scopes?
+one global, and perhaps infinite local scopes
+
+# 6. What happens to variables in a local scope when the function call returns?
+it is destroyed
+
+# 7. What is a return value? Can a return value be part of an expression?
+the value that a function call evaluates.  yes, because expressions are composed of values and operators. and a return value is a value
+
+# 8. If a function does not have a return statement, what is the return value of a call to that function?
+
+
+# 9. How can you force a variable in a function to refer to the global variable?
+
+# 10. What is the data type of None?
+
+# 11. What does the import areallyourpetsnamederic statement do?
+
+# 12. If you had a function named bacon() in a module named spam, how would you call it after importing spam?
+
+# 13. How can you prevent a program from crashing when it gets an error?
+
+# 14. What goes in the try clause? What goes in the except clause?
+
+
+
+
+
+
+
+
 
 # Chapter 4
 
