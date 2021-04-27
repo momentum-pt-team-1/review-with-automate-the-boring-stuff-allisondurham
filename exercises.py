@@ -195,24 +195,30 @@ it is destroyed
 the value that a function call evaluates.  yes, because expressions are composed of values and operators. and a return value is a value
 
 # 8. If a function does not have a return statement, what is the return value of a call to that function?
-
+it returns nothing, with value of None
 
 # 9. How can you force a variable in a function to refer to the global variable?
+by not using it locally in an assignment statement
 
 # 10. What is the data type of None?
+NoneType
 
 # 11. What does the import areallyourpetsnamederic statement do?
+it would import a module called areallyourpetsnamederic, if it existed
 
 # 12. If you had a function named bacon() in a module named spam, how would you call it after importing spam?
+import spam
+
+spam.bacon()
 
 # 13. How can you prevent a program from crashing when it gets an error?
+with try and except statements, by putting the code that may have an error in a try clause
 
 # 14. What goes in the try clause? What goes in the except clause?
+the code that may have an error goes in the try clause
+what to do if that error happens goes in the except clause
 
-
-
-
-
+################################################################################################
 
 
 
