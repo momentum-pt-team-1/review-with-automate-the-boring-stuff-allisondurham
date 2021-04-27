@@ -260,20 +260,70 @@ d
 .append() adds something to the end of a list, and .insert ( , ) adds something to an indexed spot in the list
 
 # 11. What are two ways to remove values from a list?
-.pop() and .remove()
+del list_name[index value] and list_name.remove()
 
 # 12. Name a few ways that list values are similar to string values.
+They both start and end with something string values use "", list values use []
+they are both "lists" of single text characters
 
 # 13. What is the difference between lists and tuples?
+tuples use () instead of []
+tuples contain 2+ items of related data (thing1, thing2, thing 3)
+tuples are immutable, and cannot have their values modified, appended, or removed
+use tuples when you dont intend for the sequence of values to be modified
 
 # 14. How do you type the tuple value that has just the integer value 42 in it?
+(42,)
 
 # 15. How can you get the tuple form of a list value? How can you get the list form of a tuple value?
+tuple([item1, item2, item3])  to get the tuple form of a list value
+list((item2, item2, item3))  to gdt the list form of a tuple value
 
 # 16. Variables that “contain” list values don’t actually contain lists directly. What do they contain instead?
+they contain a reference to a list 
 
 # 17. What is the difference between copy.copy() and copy.deepcopy()?
+copy.copy() makes a duplicate copy of a mutable value like a list or dictionary
+copy.deepcopy() will also copy inner lists that might be inside the list, instead of just the list itself
+
+#############################################################################################
+
+
+
+
+
+
 
 # Chapter 5
+
+# 1. What does the code for an empty dictionary look like?
+{:}
+
+# 2. What does a dictionary value with a key 'foo' and a value 42 look like?
+{foo : 42}
+
+# 3. What is the main difference between a dictionary and a list?
+a dictionary has a key that corresponds to a value  {"key1" : value1, "key2" : value 2, "key3": value 3}
+
+# 4. What happens if you try to access spam['foo'] if spam is {'bar': 100}?
+you would get an error because that key isnt defined 
+KeyError: "foo"
+
+# 5. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.keys()?
+expressing cat in dictionary spam would yield the value corresponding to key "cat"
+expressing cat.keys() in dictionary spam would yield the key itself
+
+
+# 6. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.values()?
+both of these would yield the value corresponding to key "cat"
+
+# 7. What is a shortcut for the following code?
+# if 'color' not in spam:
+#     spam['color'] = 'black'
+spam.detdefault("color", "black")
+
+# 8. What module and function can be used to “pretty print” dictionary values?
+
+
 
 # Chapter 6
